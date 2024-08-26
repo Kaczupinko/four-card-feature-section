@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'tomato-red': '#EA5454',
+                    'aqua': '#44D3D2',
+                    'sunset-orange': '#FCAE4A',
+                    'sky-blue': '#549EF2',
+                    'slate-gray': '#4D4F62',
+                },
+            },
+            fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            },
+        },
+        };
+    </script>
+
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <main>
+        <header>
+            <div>
+                <h1 class="text-slate-gray font-poppins text-[24px] font-light leading-normal tracking-[0.167px]">
+                    Reliable, efficient delivery
+                </h1>
+                <h2 class="text-slate-gray font-poppins text-[24px] font-semibold leading-normal tracking-[0.167px]">
+                    Powered by Technology
+                </h2>
+            </div>
+            <p class="text-slate-gray font-poppins text-[15px] font-normal leading-[23px] tracking-[0.167px]">
+                Our Artificial Intelligence powered tools use millions of project data points 
+                to ensure that your project is successful
+            </p>
+        </header>
+        <section class="grid grid-cols-1 gap-4">
+            <div class="p-4 rounded-lg shadow-md border-t border-aqua">
+                <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Supervisor</h3>
+                <p>Monitors activity to identify project roadblocks</p>
+                <img src="images\icon-supervisor.svg" alt="Description of the icon" class="w-16 h-16">
+            </div>
+            <div class="p-4 rounded-lg shadow-md border-t border-tomato-red">
+                <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Team Builder</h3>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img src="images\icon-team-builder.svg" alt="Description of the icon" class="w-16 h-16">
+            </div>
+            <div class="p-4 rounded-lg shadow-md border-t border-sunset-orange">
+                <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Karma</h3>
+                <p>Regularly evaluates our talent to ensure quality</p>
+                <img src="images\icon-karma.svg" alt="Description of the icon" class="w-16 h-16">
+            </div>
+            <div class="p-4 rounded-lg shadow-md border-t borderslate-gray">
+                <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Calculator</h3>
+                <p class="text-slate-gray font-poppins text-[13px] font-normal leading-[32px] tracking-[0.09px]">Uses data from past projects to provide better delivery estimates</p>
+                <img src="images\icon-calculator.svg" alt="Description of the icon" class="w-16 h-16">
+            </div>
+        </section>
+        <footer>
+            <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Radoslaw Jadczyk</a>.
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
