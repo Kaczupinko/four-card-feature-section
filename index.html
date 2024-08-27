@@ -6,7 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
-    <title>Frontend Mentor | Four card feature section</title>
+    <title>Frontend Mentor | Four card feature section by [Radoslaw Jadczyk]</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,9 @@
                     'slate-gray': '#4D4F62',
                 },
             },
+            boxShadow: {
+                'custom-blue': '0px 15px 30px -11px rgba(131, 166, 210, 0.5)',
+            },
             fontFamily: {
             poppins: ['Poppins', 'sans-serif'],
             },
@@ -34,48 +37,42 @@
     </script>
 
 </head>
-<body class="bg-slate-100">
-    <main class="max-w-7xl mx-auto px-6 py-12 min-h-screen flex flex-col bg-slate-100">
-        <header class="text-center mb-15 py-[24px] md:py-[64px]">
-            <h1 class="md:text-2xl text-slate-gray font-poppins text-[24px] md:text-[36px] font-light leading-normal tracking-[0.167px]">
+<body class="bg-slate-100 bg-[#FAFAFA]">
+    <main class="max-w-7xl mx-auto  min-h-screen flex flex-col bg-slate-100 px-[50px]">
+        <header class="text-center pt-[80px]">
+            <h1 class=" text-slate-gray font-poppins text-[25px] md:text-[36px] font-light leading-normal tracking-[0.167px] xl:tracking-[0.25px]">
                 Reliable, efficient delivery
             </h1>
-            <h2 class="text-slate-gray font-poppins text-[24px] md:text-[36px] font-semibold leading-normal tracking-[0.167px]">
+            <h2 class="text-slate-gray font-poppins text-[25px] md:text-[36px] font-semibold leading-normal tracking-[0.167px] xl:tracking-[0.25px]">
                 Powered by Technology
             </h2>
-            <p class="w-[311px] mx-auto text-center text-slate-gray font-poppins text-[15px] font-normal leading-[23px] tracking-[0.167px] py-[13px] opacity-50">
+            <p class="w-[291px] xl:w-[540px] mx-auto text-center text-slate-gray font-poppins text-[16px] font-normal leading-[25px] tracking-[0.104px] py-[13px] xl:py-[8px] opacity-50">
                 Our Artificial Intelligence powered tools use millions of project data points 
                 to ensure that your project is successful.
             </p>
         </header>
-        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 flex-grow place-items-center">
-            <div class="w-[311px] md:w-auto p-4 rounded-lg shadow-md border-t-4 border-aqua relative md:translate-y-[55%] bg-white">
+        <section class="px-[32px] py-[60px] grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-3 gap-[25px] flex-grow place-items-center">
+            <div class=" md:row-span-2 h-[222px] w-[311px] md:h-[250px] md:w-[350px] p-[24px] rounded-lg shadow-custom-blue border-t-4 border-aqua bg-white relative">
                 <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Supervisor</h3>
-                <p class="text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Monitors activity to identify project roadblocks.</p>
-                <img src="images/icon-supervisor.svg" alt="Supervisor Icon" class="w-[57px] h-[57px] absolute bottom-[28px] right-[28px]">
+                <p class="xl:w-[286px] pt-[6px] pb-[40px] text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px] ">Monitors activity to identify project roadblocks.</p>
+                <img src="images/icon-supervisor.svg" alt="Supervisor Icon" class="w-[57px] h-[57px] xl:w-[67px] xl:h-[67px] absolute bottom-[32px] right-[32px]">
             </div>
-            <div class="w-[311px] md:w-auto p-4 rounded-lg shadow-md border-t-4 border-tomato-red relative bg-white">
+            <div class="h-[222px] w-[311px] p-[28px] md:h-[250px] md:w-[350px] rounded-lg shadow-custom-blue border-t-4 border-tomato-red bg-white relative"">
                 <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Team Builder</h3>
-                <p class="text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Scans our talent network to create the optimal team for your project.</p>
-                <img src="images/icon-team-builder.svg" alt="Team Builder Icon" class="w-[57px] h-[57px] absolute bottom-[28px] right-[28px]">
+                <p class="xl:w-[286px] pt-[6px] pb-[40px] text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Scans our talent network to create the optimal team for your project.</p>
+                <img src="images/icon-team-builder.svg" alt="Team Builder Icon" class="w-[57px] h-[57px] xl:w-[67px] xl:h-[67px] absolute bottom-[32px] right-[32px]">
             </div>
-            <div class="w-[311px] md:w-auto p-4 rounded-lg shadow-md border-t-4 border-sunset-orange relative md:translate-y-[55%] bg-white">
+            <div class="xl:order-last  h-[222px] w-[311px] md:h-[250px] md:w-[350px] p-[28px] rounded-lg shadow-custom-blue border-t-4 border-sunset-orange bg-white relative"">
                 <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Karma</h3>
-                <p class="text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Regularly evaluates our talent to ensure quality.</p>
-                <img src="images/icon-karma.svg" alt="Karma Icon" class="w-[57px] h-[57px] absolute bottom-[28px] right-[28px]">
+                <p class="xl:w-[286px] pt-[6px] pb-[40px] text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Regularly evaluates our talent to ensure quality.</p>
+                <img src="images/icon-karma.svg" alt="Karma Icon" class="w-[57px] h-[57px] xl:w-[67px] xl:h-[67px]  absolute bottom-[32px] right-[32px]">
             </div>
-            <div class="w-[311px] md:w-auto p-4 rounded-lg shadow-md border-t-4 border-slate-gray relative md:col-start-2 lg:col-start-2 bg-white">
+            <div class=" h-[222px] w-[311px] p-[28px] md:h-[250px] md:w-[350px] md:md:row-span-2 rounded-lg shadow-custom-blue border-t-4 border-sky-blue bg-white relative"">
                 <h3 class="text-slate-gray font-poppins text-[20px] font-semibold leading-normal">Calculator</h3>
-                <p class="text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Uses data from past projects to provide better delivery estimates.</p>
-                <img src="images/icon-calculator.svg" alt="Calculator Icon" class="w-[57px] h-[57px] absolute bottom-[28px] right-[28px]">
+                <p class="xl:w-[286px] pt-[6px] pb-[40px] text-[#4D4F62] font-poppins text-[14px] font-normal leading-[23px] tracking-[0.09px] opacity-50 pb-[96px]">Uses data from past projects to provide better delivery estimates.</p>
+                <img src="images/icon-calculator.svg" alt="Calculator Icon" class="w-[57px] h-[57px] xl:w-[67px] xl:h-[67px] absolute bottom-[32px] right-[32px]">
             </div>
         </section>
-        <footer class="mt-auto">
-            <p class="text-center">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="#">Radoslaw Jadczyk</a>.
-            </p>
-        </footer>
     </main>
 </body>
 
